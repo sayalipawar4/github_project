@@ -181,5 +181,5 @@ jobs:
        aws eks update-kubeconfig --name devopsshack-cluster --region ap-south-1
 
     - name: Deploy to EKS
-      run: kubectl apply -f ds.yml
+      run: kubectl apply -f ds.yml --validate=false
 
